@@ -1,0 +1,178 @@
+/* Mainsss */
+:root{
+    --main-color : #E65F78;
+}
+html{
+    scroll-padding: 3rem;
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+.main-text{
+    color: var(--main-color) !important;
+}
+.bg-main{
+    background-color: var(--main-color) !important;
+} 
+.special-parag{
+    max-width: 500px;
+}
+/* ******************************************************************************************************************** */
+/* navbar */
+nav .active{
+    color: var(--main-color) !important;
+    font-weight: 700 !important;
+}
+/* home section */
+#home{
+    background-image:linear-gradient(rgba(0,0,0,.7),rgb(0,0,0,.7)) , url(../images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#home h1{
+     font-size: 65px;
+}
+#home button{
+    border: 1px solid white;
+    color: white;
+}
+#home button:hover{
+    background-color: white;
+    color: black;
+}
+/* ************************************************************************************************************************ */
+/* About section */
+#about .about-icons > div{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
+}
+#about .about-icons > div:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* ******************************************************************************************************************************** */
+/* Start services */
+#services .service-border{
+    height: 3px;
+    width: 50px;
+    background-color: var(--main-color);
+    margin: auto;
+    transition: all  0.4s;
+}
+#services .row > div > div:hover .service-border{
+    width: 75px;
+}
+/* *********************************************************************************************************************************** */
+/* start clients */
+#clients .carousel-indicators{
+    position: static;
+}
+#clients .carousel-indicators > button{
+    background-color: var(--main-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0px 8px;
+} 
+/* **************************************************************************************************************************************** */
+#port figcaption{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: all 0.3s;
+}
+#port figure:hover figcaption{
+    opacity: 1;
+}
+#port figure:hover img{
+    transform: scale(1.4);
+}
+#port figure img{
+    transition: all 0.3s;
+}
+#port .overlayw{
+    color: white;
+    left: 50%;
+   top: 100%;
+   transform: translate(-50%);
+    position: absolute;    
+    transition: all 0.3s;
+}
+#port figure:hover .overlayw{
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#port ul button.active{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 20px;
+}
+#port ul button{
+    color: black;
+}
+/* ********************************************************************************************************** */
+#contact .form-control:focus{
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 4px #ea829542;
+}
+/* ****************************************************************************************************** */
+.spin{
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 25%;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+}
+.animation{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+   bottom: 50px;
+   left: 50%;
+   transform: translatex(-50%);
+    border-radius: 20px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+.child{
+    width: 3px;
+    height: 8px;
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(50%);
+}
+@keyframes bounce{
+    0%{
+        bottom: 100px;
+    }
+    25%{
+        bottom: 5opx;
+    }
+    50%{
+        bottom: 80px;
+    }
+    75%{
+        bottom: 60px;
+    }
+    100%{
+        bottom: 50px
+    }
+}
